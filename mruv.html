@@ -7,6 +7,7 @@
         <title>MOVIMIENTO - MRUV</title>
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/styles-mruv.css">
     </head>
     <body>
         <header>
@@ -20,6 +21,76 @@
                 <a href="./mruv.html">MRUV</a>
             </nav>
         </header>
-        <script src="./js/mruv-1.js" async defer></script>
+        <div class="container-mruv">
+            <div class="info-mruv">
+                <h2>MOVIMIENTO RECTILINEO UNIFORMEMENTE VARIADO</h2>
+                <p>Encontrar el movimiento rectilíneo uniformemente acelerado (m.r.u.a.) o movimiento rectilíneo uniformemente variado (m.r.u.v.) en tu día a día es bastante común. Por ejemplo, si dejas caer una moneda al suelo (caida libre), esta realizará un movimiento rectilíneo uniformemente acelerado (m.r.u.a.) o movimiento rectilíneo uniformemente variado (m.r.u.v.). En este apartado vamos a estudiar las ecuaciones y las gráficas que definen a este movimiento.</p>
+                <img src="./images/img-mruv.png" alt="img-mruv">
+                <p>A la aceleración responsable de que cambie el módulo de la velocidad (también llamado celeridad o rapidez), se le denomina aceleración tangencial.</p>
+                <img src="./images/img-mruv2.png" alt="img-mruv2">
+            </div>
+            <div class="form-container">
+                <h2>Fórmula 1: Distancia</h2>
+                <form id="distanceForm">
+                    <label for="initialVelocity">Velocidad Inicial (v<sub>0</sub>) [m/s]:</label>
+                    <input type="number" id="initialVelocity" required>
+                    
+                    <label for="time1">Tiempo (t) [s]:</label>
+                    <input type="number" id="time1" required>
+                    
+                    <label for="acceleration">Aceleración (a) [m/s²]:</label>
+                    <input type="number" id="acceleration" required>
+                    
+                    <input type="submit" value="Calcular Distancia">
+                </form>
+            </div>
+    
+            <div class="form-container">
+                <h2>Fórmula 2: Velocidad Final</h2>
+                <form id="finalVelocityForm">
+                    <label for="initialVelocity2">Velocidad Inicial (v<sub>0</sub>) [m/s]:</label>
+                    <input type="number" id="initialVelocity2" required>
+                    
+                    <label for="acceleration2">Aceleración (a) [m/s²]:</label>
+                    <input type="number" id="acceleration2" required>
+                    
+                    <label for="time2">Tiempo (t) [s]:</label>
+                    <input type="number" id="time2" required>
+                    
+                    <input type="submit" value="Calcular Velocidad Final">
+                </form>
+            </div>
+    
+            <div class="form-container">
+                <h2>Fórmula 3: Tiempo</h2>
+                <form id="timeForm">
+                    <label for="distance3">Distancia (d) [m]:</label>
+                    <input type="number" id="distance3" required>
+                    
+                    <label for="initialVelocity3">Velocidad Inicial (v<sub>0</sub>) [m/s]:</label>
+                    <input type="number" id="initialVelocity3" required>
+                    
+                    <label for="acceleration3">Aceleración (a) [m/s²]:</label>
+                    <input type="number" id="acceleration3" required>
+                    
+                    <input type="submit" value="Calcular Tiempo">
+                </form>
+            </div>
+    
+            <div id="results"></div>
+        </div>
+        <footer>
+            <div class="logo">
+                <img src="./images/logo_UMG.png" alt="logoUMG">
+            </div>
+            <div class="owner-info">
+                <p>Creador: Wrener Estuardo Robles Samayoa</p>
+                <p>Carnet: 2290-19-6177</p>
+            </div>
+            <div class="derechos">
+                <p>&copy; 2024. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        <script src="./js/mruv.js" async defer></script>
     </body>
 </html>

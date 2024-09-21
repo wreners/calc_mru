@@ -7,6 +7,7 @@
         <title>MOVIMIENTO - MRU</title>
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/styles-mru.css">
     </head>
     <body>
         <header>
@@ -20,9 +21,71 @@
                 <a href="./mruv.html">MRUV</a>
             </nav>
         </header>
-        <div class="container">
+        <div class="container-mru">
+            <div class="info-mru">
+                <h2>MOVIMIENTO RECTILINEO UNIFORME</h2>
+                <p>El movimiento rectilíneo uniforme (m.r.u.), es aquel con
+                    velocidad constante y cuya trayectoria es una línea recta.
+                    Un ejemplo claro son las puertas correderas de un ascensor,
+                    generalmente se abren y cierran en línea recta y siempre a
+                    la misma velocidad.</p>
+                <img src="./images/img-mru.png" alt="img-mru">
+                <p>Observa que cuando afirmamos que la velocidad es constante estamos afirmando que no cambia ni su valor (también conodido como módulo, rapidez o celeridad) ni la dirección del movimiento.</p>
+                <img src="./images/img-mru2.png" alt="img-mru2">
+            </div>
+            <div class="form-container">
+                <h2>Fórmula 1: Distancia</h2>
+                <form id="distanceForm">
+                    <label for="speed1">Velocidad (v) [m/s]:</label>
+                    <input type="number" id="speed1" required>
 
+                    <label for="time1">Tiempo (t) [s]:</label>
+                    <input type="number" id="time1" required>
+
+                    <input type="submit" value="Calcular Distancia">
+                </form>
+            </div>
+
+            <div class="form-container">
+                <h2>Fórmula 2: Velocidad</h2>
+                <form id="speedForm">
+                    <label for="distance2">Distancia (d) [m]:</label>
+                    <input type="number" id="distance2" required>
+
+                    <label for="time2">Tiempo (t) [s]:</label>
+                    <input type="number" id="time2" required>
+
+                    <input type="submit" value="Calcular Velocidad">
+                </form>
+            </div>
+
+            <div class="form-container">
+                <h2>Fórmula 3: Tiempo</h2>
+                <form id="timeForm">
+                    <label for="distance3">Distancia (d) [m]:</label>
+                    <input type="number" id="distance3" required>
+
+                    <label for="speed3">Velocidad (v) [m/s]:</label>
+                    <input type="number" id="speed3" required>
+
+                    <input type="submit" value="Calcular Tiempo">
+                </form>
+            </div>
+
+            <div id="results"></div>
         </div>
-        <script src="./js/mru-1.js" async defer></script>
+        <footer>
+            <div class="logo">
+                <img src="./images/logo_UMG.png" alt="logoUMG">
+            </div>
+            <div class="owner-info">
+                <p>Creador: Wrener Estuardo Robles Samayoa</p>
+                <p>Carnet: 2290-19-6177</p>
+            </div>
+            <div class="derechos">
+                <p>&copy; 2024. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        <script src="./js/mru.js" async defer></script>
     </body>
 </html>

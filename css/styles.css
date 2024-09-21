@@ -65,10 +65,18 @@ nav a:hover{
         "D D E E"
         "F F F F";
     grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
-    grid-template-rows: 0.5fr 0.3fr 0.5fr 2fr 0.8fr; /* 4 filas de 100px de altura */
+    grid-template-rows: 0.15fr 0.15fr 0.15fr 2fr 0.8fr; /* 4 filas de 100px de altura */
     gap: 5px; /* Espacio entre elementos */
     padding: 8px 35px; /* Espacio interior */
     align-items: center;
+}
+
+.container h2{
+    font-size: 2rem;
+}
+
+.container p{
+    font-size: 1.3rem;
 }
 
 .item1{
@@ -94,8 +102,8 @@ nav a:hover{
 }
 
 .item4 img{
-    width: 100%;
-    height: auto;
+    max-width: 80%;
+    max-height: auto;
 }
 
 .item5{
@@ -106,20 +114,23 @@ nav a:hover{
 }
 
 .item5 img{
-    width: 100%;
-    height: auto;
+    max-width: 80%;
+    max-height: auto;
 }
 
 .item6{
     text-align: center;
     grid-area: F;
+    margin-top: 20px;
     margin-bottom: 50px;
     font-weight: bold;
+    font-size: 1.4rem;
 }
 
 .item6 p{
     text-decoration: underline;
     color: black;
+    font-size: 1.5rem;
 }
 
 .item6 a{
